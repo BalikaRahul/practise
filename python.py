@@ -1,20 +1,12 @@
 def reverse(a,r):
-    # if(len(str(a))==0):
-    #     return[]
-    # if(len(str(a))==1):
-    #     return a
     for i in range(len(str(a))):
-        divisor=a//10
-        divisor=remainder
-        r=r*10+divisor
-        return r
+        r=a[::-1]
+        if (r==a):
+            return "it is a"
+        else:
+            return "it is not a"
+    reverse(a,r)
 
-        
 
-
-a=4543
+a="racecar"
 r=""
-divisor=0
-remainder=0
-print(reverse(a,r))
-
