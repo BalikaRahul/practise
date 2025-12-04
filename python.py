@@ -1,7 +1,32 @@
-# a=[2,3,4,5,2]
-# for i in range(len(a)):
-#     for j in range(i+1,len(a)):
-#         if(a[i]<a[j]):
-#             a[i],a[j]=a[j],a[i]
-# print(a)
-print("hello world")
+def merge_sort(a):
+    if(len(a)>1):
+        mid=len(a)//2
+        left=a[:mid]
+        right=a[mid:]
+
+        merge_sort(left)
+        merge_sort(right)
+
+        i=j=k=0
+
+        while(i<len(left) and j<len(right)):
+            if(left[i]<right[j]):
+                a[k]=left[i]
+                i+=1
+            else:
+                a[k]=right[j]
+                j+=1
+            k+=1
+
+        while(i<len (left)):
+            a[k]=left[i]
+            i+=1
+            k+=1
+        while (j<len(right)):
+            a[k]=right[j]
+            j+=1
+            k+=1
+    return a
+a=[2,3,4,1,7,5,6,8]
+result =merge_sort(a)
+print(result)
