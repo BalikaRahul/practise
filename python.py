@@ -1,12 +1,7 @@
-def reverse(a,r):
-    for i in range(len(str(a))):
-        r=a[::-1]
-        if (r==a):
-            return "it is a"
-        else:
-            return "it is not a"
-    reverse(a,r)
-
-
-a="racecar"
-r=""
+# a=[2,3,4,5,2]
+# for i in range(len(a)):
+#     for j in range(i+1,len(a)):
+#         if(a[i]<a[j]):
+#             a[i],a[j]=a[j],a[i]
+# print(a)
+print("hello world")
